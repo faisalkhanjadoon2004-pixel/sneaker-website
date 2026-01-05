@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sneaker Store PK</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="logo">
+        👟 Sneaker Store PK
+    </div>
+
+    <div class="icons">
+        <input type="text" id="searchBox" placeholder="Search sneakers..." onkeyup="searchSneakers()">
+        <span class="icon" onclick="toggleSearch()">🔍</span>
+        <span class="icon cart">
+            🛒 <span id="cartCount">0</span>
+        </span>
+    </div>
+</header>
+
+<section class="products" id="productList">
+
+    <div class="card">
+        <img src="images/CJ9179-200.webp" alt="Nike Air Force 1">
+        <h3>Nike Air Force 1</h3>
+        <p class="price">PKR 32,000</p>
+        <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <img src="images/GX9162_01_standard.avif" alt="Adidas Ultraboost">
+        <h3>Adidas Ultraboost</h3>
+        <p class="price">PKR 38,000</p>
+        <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <img src="images/puma.avif" alt="Puma RS-X">
+        <h3>Puma RS-X</h3>
+        <p class="price">PKR 28,000</p>
+        <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <img src="images/Jordan1.jpg" alt="Jordan 1 Retro">
+        <h3>Jordan 1 Retro</h3>
+        <p class="price">PKR 55,000</p>
+        <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
